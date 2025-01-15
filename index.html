@@ -62,13 +62,18 @@
                 </ul>       
               </div>
               <div class="d-flex" id="login">
-                <button class="d-flex btn">
-                    <ion-icon name="notifications-outline"></ion-icon>
-                </button>
-                <button class="btn" type="button">
-                                      
-                    <img src="assets/avatar-1.jpg" alt="avatar-1">
-                </button>
+                <div class="badge-wrapper">
+                  <button class="d-flex btn">
+                      <ion-icon name="notifications-outline"></ion-icon>
+                  </button>
+                  <span class="position-absolute badge"></span>
+                </div>
+                <div class="badge-wrapper">
+                  <button class="btn position-relative" type="button">
+                    <img src="assets/avatar-1.jpg" alt="avatar-1">  
+                  </button>
+                  <span class="position-absolute badge"></span>
+                </div>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -82,22 +87,59 @@
         <section id="jumbotron">
             <div class="container-xxl">
                 <div class="row">
-                    <div class="col-12 col-md-6">
-                        <h1 class="display-5 fw-bold">Custom jumbotron</h1>
+                    <div class="col-12 col-md-6 mb-4">
+                        <h1 class="display-5 fw-bold">Welcome Web Students!</h1>
                         <p class="col-md-8 fs-4">
-                        Using a series of utilities, you can create this jumbotron, just
-                        like the one in previous versions of Bootstrap. Check out the
-                        examples below for how you can remix and restyle it to your liking.
+                        Hand-picked Instructor and expertly crafted courses, designed for the modern students and interpreneur
                         </p>
-                        <button class="btn btn-primary btn-lg" type="button">
-                        Example button
+                        <button class="btn btn-primary" type="button">
+                        Browse Courses
                         </button>
+                        <button class="btn">Are you Instructor?</button>
                     </div>
                     <div class="col-12 col-md-6">
                         <img src="assets/hero-img.png" alt="hero-img">
                     </div>
                 </div>
             </div>            
+        </section>
+
+        <section id="statistics">
+          <div class="container-xxl">
+            <div class="row">
+              <div class="col-12 col-md-4 d-flex">
+                <div class="icons d-flex">
+                  <ion-icon name="videocam-outline"></ion-icon>
+                </div>
+                <div class="icons-text">
+                  <p class="fw-bold">30,000 online courses</p>
+                  <p>Enjoy a variety of fresh topics</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 d-flex">
+                <div class="icons d-flex">
+                  <ion-icon name="people-outline"></ion-icon>
+                </div>
+                <div class="icons-text">
+                  <p class="fw-bold">Expert instruction</p>
+                  <p>Find the right instructor for you</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 d-flex">
+                <div class="icons d-flex">
+                  <ion-icon name="time-outline"></ion-icon>
+                </div>
+                <div class="icons-text">
+                  <p class="fw-bold">Lifetime access</p>
+                  <p>Learn on your schedule</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="mega-container">
+          
         </section>
         
     </main>

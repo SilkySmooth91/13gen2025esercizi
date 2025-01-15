@@ -3,7 +3,7 @@
     --bs-btn-padding-y: 0;
 }
 
-#login > .d-flex {
+#login > .badge-wrapper > .d-flex {
     justify-content: center;
     align-items: center;
     min-width: 3rem;
@@ -12,43 +12,120 @@
     background-color: #efeef3;
 }
 
-#login > .d-flex > ion-icon {
+#login > .badge-wrapper > .d-flex > ion-icon {
     min-width: 1.2rem;
     min-height: 1.2rem;
     background-color: #efeef3;
     color: #7c7c7c;
 }
 
-#login > button:last-child {
+#login > .badge-wrapper:first-child > .badge {
+    top: -0.2rem;
+    background-color: #7550fe;
+}
+
+.badge-wrapper {
+    position: relative;
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0.5rem;
+    z-index: 0;
+}
+
+#login > .badge-wrapper > button {
     max-width: 3rem;
     max-height: 3rem;
     border-radius: 50%;
     overflow: hidden;
-    margin-left: 0.5rem;
+    position: relative !important;
 }
 
-#login > button:last-child > img {
+#login > .badge-wrapper > button > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: 0;
 }
 
-#login > button:last-child > span {
-    left: 98.3%;
-    top: 60%;
-    font-size: 4rem;
+.badge-wrapper .badge {
+    all: unset;
+    position: absolute !important;
+    bottom: -0.2rem; 
+    right: -0.2rem; 
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: #28a745;
+    border: 2px solid white;
+    border-radius: 50%;
+    z-index: 10;
+    display: block !important;
 }
 
 #jumbotron {
     background-color: #7550fe;
+    color: white;
+    
 }
 
 #jumbotron > .container-xxl > .row > div:first-of-type {
     padding-top: 5rem;
+    padding-right: 0.8;
+    padding-left: 0.8;
+}
+
+#jumbotron > .container-xxl > .row > div:last-of-type {
+    padding-left: 0;
 }
 
 #jumbotron > .container-xxl > .row img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#jumbotron > .container-xxl > .row > .col-12 > button {
+    --bs-btn-padding-x: 1rem;
+    --bs-btn-padding-y: 1rem;
+}
+
+#jumbotron > .container-xxl > .row > .col-12 > button:first-of-type {
+    background-color: #1acb98;
+    font-weight: bold;
+}
+
+#jumbotron > .container-xxl > .row > .col-12 > button:last-of-type {
+    background-color: white;
+}
+
+#statistics {
+    box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.067);
+}
+
+#statistics > .container-xxl > .row > .col-12 {
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    gap: 1rem;
+}
+
+#statistics > .container-xxl > .row > .col-12 > .icons {
+    justify-content: center;
+    align-items: center;
+    min-width: 3.5rem;
+    min-height: 3.5rem;
+    border-radius: 50%;
+    background-color: #ffeeda;
+}
+
+#statistics > .container-xxl > .row > .col-12 > .icons > ion-icon {
+    color: #c28135; 
+}
+
+#statistics > .container-xxl > .row > .col-12 > .icons-text > p {
+    margin-bottom: 0;
+}
+
+#mega-container {
+    background-color: #f5f4f8;
 }
