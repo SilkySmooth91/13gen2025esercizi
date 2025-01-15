@@ -1,0 +1,54 @@
+.btn {
+    --bs-btn-padding-x: 0;
+    --bs-btn-padding-y: 0;
+}
+
+#login > .d-flex {
+    justify-content: center;
+    align-items: center;
+    min-width: 3rem;
+    max-height: 3rem;
+    border-radius: 50%;
+    background-color: #efeef3;
+}
+
+#login > .d-flex > ion-icon {
+    min-width: 1.2rem;
+    min-height: 1.2rem;
+    background-color: #efeef3;
+    color: #7c7c7c;
+}
+
+#login > button:last-child {
+    max-width: 3rem;
+    max-height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 0.5rem;
+}
+
+#login > button:last-child > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#login > button:last-child > span {
+    left: 98.3%;
+    top: 60%;
+    font-size: 4rem;
+}
+
+#jumbotron {
+    background-color: #7550fe;
+}
+
+#jumbotron > .container-xxl > .row > div:first-of-type {
+    padding-top: 5rem;
+}
+
+#jumbotron > .container-xxl > .row img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
