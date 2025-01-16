@@ -92,10 +92,14 @@
 #jumbotron > .container-xxl > .row > .col-12 > button:first-of-type {
     background-color: #1acb98;
     font-weight: bold;
+    margin-top: 1.5rem;
 }
 
 #jumbotron > .container-xxl > .row > .col-12 > button:last-of-type {
     background-color: white;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    color: black;
 }
 
 #statistics {
@@ -128,4 +132,42 @@
 
 #mega-container {
     background-color: #f5f4f8;
+}
+
+.container-xl .row {
+    --bs-gutter-x: 0;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.container-xl {
+    margin-top: 8rem;
+}
+
+.card {
+    width: 15rem;
+}
+
+#carouselExample button {
+    border: 1px solid black;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    max-width: 2rem;
+    max-height: 2rem;
+    top: 65%;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.carousel-control-prev {
+    left: 12%
+}
+
+.carousel-control-next {
+    right: 12%
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    color: #2a11ab;
 }
