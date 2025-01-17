@@ -134,41 +134,50 @@
     background-color: #f5f4f8;
 }
 
-.container-xl .row {
-    --bs-gutter-x: 0;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.container-xl {
-    margin-top: 8rem;
-}
-
-.card {
-    width: 15rem;
+#recommended > .row:first-child {
+    padding-top: 8rem;
 }
 
 .card-header {
-    margin-left: 9rem;
     margin-bottom: 1.5rem;
     font-size: 1.8rem;
     font-weight: 500;
 }
 
+.card-body > .d-flex:first-of-type > ion-icon:last-of-type {
+    color: #7550fe;
+}
+
+.card-body > .d-flex:nth-child(4) {
+    border-bottom: 1px solid #f5f4f8;
+}
+
+.card-body > .d-flex:last-of-type > .d-flex > img {
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+    border-radius: 50%;
+}
+
+.card-body > .d-flex:last-of-type > .d-flex:last-of-type {
+    min-width: 2.5rem;
+    min-height: 2.5rem;
+    border-radius: 50%;
+}
+
 .carousel-control-prev, .carousel-control-next {
     max-width: 2rem;
     max-height: 2rem;
-    top: 65%;
+    top: 45%;
     border-radius: 50%;
     background-color: rgb(40, 40, 40);
 }
 
 .carousel-control-prev {
-    left: 8%
+    left: -3%
 }
 
 .carousel-control-next {
-    right: 8%
+    right: -3%
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
