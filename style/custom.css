@@ -138,6 +138,15 @@
     padding-top: 8rem;
 }
 
+.card {
+    transition: .4s;
+}
+
+.card:hover {
+    transform: scale(110%);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%) !important;
+}
+
 .card-header {
     margin-bottom: 1.5rem;
     font-size: 1.8rem;
@@ -173,14 +182,26 @@
 }
 
 .carousel-control-prev {
-    left: -3%
+    left: -4%
 }
 
 .carousel-control-next {
-    right: -3%
+    right: -4%
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
     max-width: 0.8rem;
     max-height: 0.8rem;
 }
+
+.bookmark {
+    transition: background-color .4s;
+}
+
+.bookmark:hover  {
+    background-color: #c6b1ca;
+    cursor: pointer;
+}
+
+
+
