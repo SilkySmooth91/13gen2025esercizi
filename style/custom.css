@@ -145,6 +145,7 @@
 .card:hover {
     transform: scale(110%);
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%) !important;
+    z-index: 10;
 }
 
 .card-header {
@@ -194,12 +195,13 @@
     max-height: 0.8rem;
 }
 
-.bookmark {
-    transition: background-color .4s;
+.bookmark > svg >path:last-child {
+    opacity: 0;
+    transition: opacity .4s ease;
 }
 
-.bookmark:hover  {
-    background-color: #c6b1ca;
+.bookmark > svg > path:last-child:hover  {
+    opacity: 1;
     cursor: pointer;
 }
 
